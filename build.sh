@@ -8,7 +8,7 @@ do
   if [ -f out/target/product/$i/probam_*_$i.zip ]
 	then
 		version=$(basename out/target/product/$i/probam_*_$i.zip | sed 's/[^0-9.]*\([0-9.]*\).*/\1/')
-		scp out/target/product/$i/probam_*_$i.zip root@37.139.24.177:/home/rsync/
+		scp out/target/product/$i/probam_*_$i.zip root@162.243.33.63:/home/getcm/
 		rm -rf out/target/product/$i/*.zip*
   fi
 done
