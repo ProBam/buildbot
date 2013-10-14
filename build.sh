@@ -1,5 +1,5 @@
 #!/bin/bash
-device=(jfltexx endeavoru m7ul n7100 i9300 i9305 t0lte t0lteatt mako toro toroplus grouper jflteatt jfltecan jfltecri jfltespr jfltetmo jflteusc jfltevzw)
+device=(jfltexx endeavoru m7ul mb886 n7100 p880 i9300 i9305 t0lte t0lteatt mako toro toroplus grouper jflteatt jfltecan jfltecri jfltespr jfltetmo jflteusc jfltevzw)
 
 for i in "${device[@]}"
 do
