@@ -8,10 +8,7 @@ do
   if [ -f out/target/product/$i/probam_*_$i.zip ]
 	then
 		version=$(basename out/target/product/$i/probam_*_$i.zip | sed 's/[^0-9.]*\([0-9.]*\).*/\1/')
-		scp out/target/product/$i/probam_*_$i.zip probam@upload.goo.im:/home/probam/public_html/$i/
-		scp out/target/product/$i/probam_*_$i.zip root@31.220.42.102:/var/www/
-		scp out/target/product/$i/probam_*_$i-gapps.zip jumoogpro@frs.sourceforge.net:/home/frs/project/probam/
-		perl ttytter.pl -status="ProBam ${version} for ${i} is done"
+		scp out/target/product/$i/probam_*_$i.zip root@37.139.24.177:/home/rsync/
 		rm -rf out/target/product/$i/*.zip*
   fi
 done
